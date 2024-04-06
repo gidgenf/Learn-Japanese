@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+}
+
+.cardcontainer {
+    border: solid 5px black;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px;
+    padding: 10px;
+}
+
+.lettercard {
+    border: solid 2px black;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+    width: 2em;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.lettercard:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 3px;
+    border-color: rgb(231, 231, 1);
+}
+
+.cardcontainer {
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
+}
