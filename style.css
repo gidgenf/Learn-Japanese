@@ -12,7 +12,7 @@ h1 {
     width: 30em;
     height: 40em;
     border: solid 1px black;
-
+    margin: 6em;
 }
 
 .container2>div {
@@ -20,7 +20,8 @@ h1 {
     margin-left: 0;
 }
 
-.lettercard>p,.lettercard2>p {
+.lettercard>p,
+.lettercard2>p {
     font-size: 5em;
 }
 
@@ -67,4 +68,29 @@ h1 {
     align-items: center;
     display: flex;
     width: 100px;
+}
+
+#play {
+    display: flex;
+    border: solid 4px black;
+    border-radius: 15px;
+    padding: 10px;
+    color: black;
+    transition: transform 0.2s;
+}
+
+#play:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 3px;
+    border: solid 4px rgb(231, 231, 1);
+}
+
+.containermain {
+    margin: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5em;
+}
+
+.containermain>a {
+    text-decoration: none;
 }
