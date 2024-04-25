@@ -9,19 +9,22 @@ h1 {
 }
 
 .container2 {
-    width: 30em;
-    height: 40em;
     border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25em;
 }
 
 .container2>div {
     margin-right: 0;
     margin-left: 0;
+    max-width: 20em;
 }
 
 .lettercard>p,
 .lettercard2>p {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .lettercard {
@@ -32,7 +35,7 @@ h1 {
     border: solid 2px black;
     border-radius: 5px;
     cursor: pointer;
-    height: 10em;
+    height: 5em;
     transition: transform 0.2s;
 }
 
@@ -46,10 +49,6 @@ h1 {
     cursor: pointer;
     height: 10em;
     transition: transform 0.2s;
-}
-
-.card {
-    border: solid 2px black;
 }
 
 .lettercard:hover {

@@ -141,7 +141,7 @@ function showCards(cardsList) {
 
     shuffledCards.forEach(function (card) {
         const cardElement = document.createElement('div');
-        cardElement.classList.add('col-sm-6');
+        cardElement.classList.add('col-sm-6', 'col-md-6', 'col-6', 'col-lg-6', 'mt-2');
         cardElement.innerHTML = `
         <div class="lettercard">
             <p>${card.pron}</p>
@@ -155,7 +155,7 @@ function showCards(cardsList) {
     <p>${correctAnswer.hi}</p>
     `;
 
-    selectedCardElement.classList.add('lettercard2', 'col-sm-12', 'justify-content-center');
+    selectedCardElement.classList.add('lettercard2', 'col-sm-12', 'col-lg-12', 'justify-content-center');
     selectedCard.appendChild(selectedCardElement);
 }
 
