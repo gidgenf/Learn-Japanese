@@ -13,18 +13,13 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25em;
+    width: 24em;
 }
 
 .container2>div {
     margin-right: 0;
     margin-left: 0;
     max-width: 20em;
-}
-
-.lettercard>p,
-.lettercard2>p {
-    font-size: 2em;
 }
 
 .lettercard {
@@ -92,6 +87,17 @@ h1 {
     font-size: 2em;
 }
 
+.lettercard2,
+.lettercard>p {
+    font-size: 2em;
+}
+
+@media (max-width: 767px) {
+    .lettercard>p {
+        font-size: 0.9em;
+    }
+}
+
 .containermain>a {
     text-decoration: none;
 }
@@ -99,5 +105,5 @@ h1 {
 .cardcontainer {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+    gap: 5px;
 }

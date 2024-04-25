@@ -163,8 +163,6 @@ function showCards(cardsList) {
 function iniciar() {
     cards = [];
 
-
-
     selectCard(characters);
     selectCards(characters, 4);
     showCards(cards);
