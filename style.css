@@ -12,7 +12,6 @@ h1 {
     width: 30em;
     height: 40em;
     border: solid 1px black;
-    margin: 6em;
 }
 
 .container2>div {
@@ -22,7 +21,7 @@ h1 {
 
 .lettercard>p,
 .lettercard2>p {
-    font-size: 5em;
+    font-size: 3em;
 }
 
 .lettercard {
@@ -72,9 +71,12 @@ h1 {
 
 #play {
     display: flex;
+    justify-content: center;
+    align-items: center;
     border: solid 4px black;
     border-radius: 15px;
     padding: 10px;
+    width: 4em;
     color: black;
     transition: transform 0.2s;
 }
@@ -88,9 +90,15 @@ h1 {
 .containermain {
     margin: 2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 5em;
+    font-size: 2em;
 }
 
 .containermain>a {
     text-decoration: none;
+}
+
+.cardcontainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
 }
