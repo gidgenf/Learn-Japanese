@@ -8,28 +8,48 @@ h1 {
     text-align: center;
 }
 
-.container {
-    justify-content: center;
-    align-items: center;
+.container2 {
+    width: 30em;
+    height: 40em;
+    border: solid 1px black;
+
 }
 
-.cardcontainer {
-    border: solid 5px black;
-    border-radius: 10px;
-    box-shadow: 1px 5px 10px;
-    padding: 10px;
+.container2>div {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.lettercard>p,.lettercard2>p {
+    font-size: 5em;
 }
 
 .lettercard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     border: solid 2px black;
     border-radius: 5px;
-    padding: 10px;
-    display: inline-block;
-    margin: 10px;
-    width: 2em;
-    text-align: center;
     cursor: pointer;
+    height: 10em;
     transition: transform 0.2s;
+}
+
+.lettercard2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 10em;
+    transition: transform 0.2s;
+}
+
+.card {
+    border: solid 2px black;
 }
 
 .lettercard:hover {
@@ -38,7 +58,13 @@ h1 {
     border-color: rgb(231, 231, 1);
 }
 
-.cardcontainer {
-    display: grid;
-    grid-template-columns: repeat(5, 80px);
+.oculto {
+    display: none;
+}
+
+#btnIniciar {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100px;
 }
